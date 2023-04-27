@@ -1,0 +1,112 @@
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.fade-out {
+    animation: fadeOut ease 2s;
+    -webkit-animation: fadeOut ease 2s;
+    -moz-animation: fadeOut ease 2s;
+    -o-animation: fadeOut ease 2s;
+}
+@keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+@-moz-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+@-webkit-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+@-o-keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+
+}
+.shoes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.invisible{
+    opacity: 0;
+}
+.shoes-wrapper{
+    aspect-ratio: 4/3;
+    position: absolute;
+}
+.photo-container{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 20px;
+    background: cadetblue;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+    border: none;
+    transition: all 180ms ease-in-out;
+    width: 110px;
+    height: 60px;
+}
+.btn:hover{
+    background: #407778FF;
+}
+.pager-container{
+    display: flex;
+}
+.pager-unit{
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+    background: cadetblue;
+    border-radius: 10px;
+    transition: all 180ms ease-in-out;
+}
+.pager-unit:last-child{
+    margin-right: 0;
+}
+.pager-unit:hover, .pager-active{
+    background: #407778FF;
+}
+.gallery-container{
+    height: fit-content;
+    width: fit-content;
+    margin-right: 30px;
+}
